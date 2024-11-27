@@ -1,0 +1,88 @@
+.game-container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 500px;
+  border: 2px solid #010834;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #1a1a2e, #162447); /* Gradasi gelap */
+}
+
+.flag-image {
+  width: 200px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: background-color 0.2s;
+}
+
+.option-button:hover {
+  background-color: #f0f0f0;
+}
+
+.restart-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.restart-btn:hover {
+  background-color: #45a049;
+}
+
+.materi-title1 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 800;
+  background: linear-gradient(to right, #22d3ee, #3b82f6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.materi-subtitle1 {
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+.option-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.option-button:hover {
+  background-color: rgba(106, 203, 255, 0.2); 
+  color: #fffafa; 
+  transform: translateY(-3px); 
+}
+
+.materi-subtitle2 {
+  background-color: #152263; 
+  padding: 10px 20px; 
+  border-radius: 10px; 
+  font-size: 16px; 
+  font-weight: bold; 
+  display: inline-block; 
+}

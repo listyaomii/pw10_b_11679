@@ -1,10 +1,14 @@
 import React from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import { Gamepad2, Monitor, Rocket, Heart } from "lucide-react";
 import CardBackground from "./components/card/CardBackground";
 import Content from "./components/content/Content";
 import Materi1 from "./components/materi/Materi1";
 import Materi2 from "./components/materi/Materi2";
+import TebakAngkaGame from "./components/game/TebakAngkaGame";
+import FlagGuessingGame from "./components/guess/FlagGuessingGame.jsx"; 
 import Image from "./assets/Image.jsx";
 
 // Content data
@@ -56,6 +60,7 @@ const content = [
 function App() {
   return (
     <>
+      <ToastContainer /> {/* Tambahkan di sini untuk level global */}
       {/* Landing Page Container */}
       <div className="container container-landing">
         <div className="contentLandingPage">
@@ -93,19 +98,33 @@ function App() {
         </CardBackground>
       </div>
 
-      {/* Materi 1 Section */}
+      {/* Materi Sections */}
       <div className="container container-content">
         <h1 className="judulContent">Materi 1</h1>
         <CardBackground>
           <Materi1 />
         </CardBackground>
       </div>
-
-      {/* Materi 2 Section */}
       <div className="container container-content">
         <h1 className="judulContent">Materi 2</h1>
         <CardBackground>
           <Materi2 />
+        </CardBackground>
+      </div>
+
+      {/* Game Tebak Angka Section */}
+      <div className="container container-content">
+        <h1 className="judulContent">Game 1</h1>
+        <CardBackground>
+          <TebakAngkaGame />
+        </CardBackground>
+      </div>
+
+      {/* Game Tebak Bendera Section */}
+      <div className="container container-content">
+        <h1 className="judulContent">Game 2: Tebak Bendera</h1>
+        <CardBackground>
+          <FlagGuessingGame />
         </CardBackground>
       </div>
     </>
